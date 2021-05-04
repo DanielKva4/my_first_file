@@ -1,37 +1,37 @@
-# y = list(map(lambda x: x + 100, [4,5,6]))
+y = list(map(lambda x: x + 100, [4,5,6]))
 # # print(y)
+
+z = list(filter(lambda x: , [4,5,6]))
+# print(z)
+
+
+import statistics
+y = [1, 2, 3, 4, 5]
+statistics.mean(y)
 #
-# # z = list(filter(lambda x: , [4,5,6]))
-# # print(z)
-#
-#
-# import statistics
-# y = [1, 2, 3, 4, 5]
-# statistics.mean(y)
-#
-# from statistics import mean
-# mean(y)
-#
-# import math
+from statistics import mean
+mean(y)
+
+import math
 # math.factorial(5)
-#
-# from math import factorial
-# factorial(5)
-#
-# import json
-# x = json.dumps([1, 2, 3, 4])
-#
-# from json import dumps
-# dumps([1, 2, 3])
-#
-# from json import loads
-# zz = (loads(x))
+
+from math import factorial
+factorial(5)
+
+import json
+x = json.dumps([1, 2, 3, 4])
+
+from json import dumps
+dumps([1, 2, 3])
+
+from json import loads
+zz = (loads(x))
 # # print(zz[0])
 #
-# from django.http import HttpResponse
+from django.http import HttpResponse
 #
 #
-# import re
+import re
 #
 # print(re.match('^\s$', ' ') is not None)
 #
@@ -46,22 +46,21 @@
 import re
 
 # print(re.match("^[HBMP][HBMP]\d{7}$", 'PB1234567') is not None)
-#
+
 # print(re.match('^(Привет|Добрый день|Салют)\sдорогой юзер$', 'Привет дорогой юзер') is not None)
-#
+
 # print(re.match('^\d\s(\+|\/|\*)\s\d$', '5 * 5') is not None)
-#
-# login = 'give_me_spam@gmail.com'
-# print(re.match('^(.+)@gmail\.com$', login).groups()
-# )
+
 # print(re.match('^a\d+c$', 'a777c') is not None)
 
 def login():
     x = input('get_login: ')
-    if re.match('^.+@gmail\.com$', x) is not None:
-        return re.match('^(.+)@gmail\.com$', x).groups()
-    else:
+    if re.match('^.+@gmail\.com$', x) is None:
         raise Exception("Ты лох")
+    else:
+        return re.match('^(.+)@gmail\.com$', x).groups()
+
+
 # print(login())
 
 def regai():
@@ -73,7 +72,3 @@ def regai():
 
 # print(regai())
 
-def Time_to(a):
-    if re.match('^\d$')
-
-Time_to('2018-01-09 12:32:04')
