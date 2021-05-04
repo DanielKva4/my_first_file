@@ -1,48 +1,3 @@
-y = list(map(lambda x: x + 100, [4,5,6]))
-# # print(y)
-
-z = list(filter(lambda x: , [4,5,6]))
-# print(z)
-
-
-import statistics
-y = [1, 2, 3, 4, 5]
-statistics.mean(y)
-#
-from statistics import mean
-mean(y)
-
-import math
-# math.factorial(5)
-
-from math import factorial
-factorial(5)
-
-import json
-x = json.dumps([1, 2, 3, 4])
-
-from json import dumps
-dumps([1, 2, 3])
-
-from json import loads
-zz = (loads(x))
-# # print(zz[0])
-#
-from django.http import HttpResponse
-#
-#
-import re
-#
-# print(re.match('^\s$', ' ') is not None)
-#
-# print(re.match('^\d$', '2') is not None)
-#
-# print(re.match('^\d\d$', '22') is not None)
-#
-# print(re.match('^\s\s\s$', '   ') is not None)
-#
-# print(re.match('^a\dv$', 'a7v') is not None)
-
 import re
 
 # print(re.match("^[HBMP][HBMP]\d{7}$", 'PB1234567') is not None)
@@ -72,3 +27,25 @@ def regai():
 
 # print(regai())
 
+def fn_5(x):
+    if re.match('^\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2}$', x) is not None:
+        x = re.match('^\d{4}-\d{2}-\d{2}\s\d{2}:(\d{2}):\d{2}$', x).groups()
+        return x
+    else:
+        raise Exception("Нипанятна")
+print(fn_5('2018-01-09 12:32:01'))
+
+
+
+def fn_6():
+    x = input('ебош дискриминант: ')
+    if re.match('^-?\d+\.?\d*\s[\+\*-/]\s-?\d+\.?\d*$', x) is not None:
+        y = float(re.match('^(-?\d+\.?\d*)\s[\+\*-/]\s-?\d+\.?\d*$', x).groups()[0])
+        z = float(re.match('^-?\d+\.?\d*\s[\+\*-/]\s(-?\d+\.?\d*)$', x).groups()[0])
+        u = re.match('^-?\d+\.?\d*\s([\+\*-/])\s-?\d+\.?\d*$', x).groups()[0]
+        sl = {'*': y * z, '+': y + z, '-': y - z, '/': y / z}
+        return sl[u]
+    else:
+        raise Exception('asds')
+
+# print(fn_6())
