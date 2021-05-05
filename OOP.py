@@ -19,12 +19,12 @@ class Dress:
         self.color = color
         self.rost = rost
 
-    def delaem_rost(self, rost_dreva):
-        self.rost = self.rost + rost_dreva
+    def growth(self, rise):
+        self.rost = self.rost + rise
 
 brevno = Dress('dub', 'green', 100)
 
-brevno.delaem_rost(5)
+brevno.growth(5)
 # print(brevno.rost)
 
 

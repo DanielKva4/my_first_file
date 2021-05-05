@@ -22,6 +22,7 @@ def Task_3(a):
     for _ in a:
         x = x + 1
     return x
+len()
 
 
 # print(Task_3([1, 2, 3, 4, 8]))
@@ -254,39 +255,26 @@ def Task_24(a):
         print('*' * x)
     return
 
-
 # Task_24(5)
 
 def Task_25(a):
-    z = ' '
-    i = 2
-    u = 2
-    print(' ' * 3 + '*')
-    for x in range(1, a + 1):
-        print(z * i + '*' * (x + u))
-        i -= 1
-        u += 1
-        if u == 5:
-            break
-    u -= 4
-    i += 1
-    for x in range(a - 1, 0, -1):
-        u -= 2
-        i += 1
-        print(z * i + '*' * (x + u))
-        u += 1
-# Task_25(7)
-
-def Task_25_2(a):
-    prob = ' '
-    kolvo_prob = a - 4
-    kolvo_zvezd = 1
+    space = ' '
+    gaps = a
     for x in range(1, a + 1, 2):
-        print(prob * kolvo_prob + '*' * x)
-        kolvo_prob -= 1
-    kolvo_prob = 3
+        print(space * gaps + '*' * x)
+        gaps -= 1
+    gaps += 2
     for z in range(a - 2, 0, -2):
-        print(prob * kolvo_prob + '*' * z)
-        kolvo_prob += 1
+        print(space * gaps + '*' * z)
+        gaps += 1
 
-Task_25_2(11)
+# Task_25(19)
+
+
+                        # WITH WHILE
+
+def Tas_3(a):
+    while
+
+
+

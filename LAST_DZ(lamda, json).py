@@ -28,7 +28,5 @@ from json import loads
 zz = (loads(x))
 # # print(zz[0])
 
-from django.http import HttpResponse
-
 
 

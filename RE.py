@@ -38,7 +38,7 @@ print(fn_5('2018-01-09 12:32:01'))
 
 
 def fn_6():
-    x = input('ебош дискриминант: ')
+    x = input('Калькулятор: ')
     if re.match('^-?\d+\.?\d*\s[\+\*-/]\s-?\d+\.?\d*$', x) is not None:
         y = float(re.match('^(-?\d+\.?\d*)\s[\+\*-/]\s-?\d+\.?\d*$', x).groups()[0])
         z = float(re.match('^-?\d+\.?\d*\s[\+\*-/]\s(-?\d+\.?\d*)$', x).groups()[0])
@@ -46,6 +46,6 @@ def fn_6():
         sl = {'*': y * z, '+': y + z, '-': y - z, '/': y / z}
         return sl[u]
     else:
-        raise Exception('asds')
+        raise Exception('Условия функции не соблюдены')
 
 # print(fn_6())
