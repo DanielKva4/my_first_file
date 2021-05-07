@@ -28,6 +28,9 @@ from json import loads
 zz = (loads(x))
 # # print(zz[0])
 
+def plus(a):
+    return a + 5
+
 
 
 
