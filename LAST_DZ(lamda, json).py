@@ -1,7 +1,7 @@
 y = list(map(lambda x: x + 100, [4,5,6]))
-# # print(y)
+print(y)
 
-z = list(filter(lambda x: , [4,5,6]))
+# z = list(filter(lambda x: , [4,5,6]))
 # print(z)
 
 
@@ -27,6 +27,10 @@ dumps([1, 2, 3])
 from json import loads
 zz = (loads(x))
 # # print(zz[0])
+
+def plus(a):
+    return a + 5
+
 
 
 
