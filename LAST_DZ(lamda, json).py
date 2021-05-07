@@ -1,5 +1,5 @@
 y = list(map(lambda x: x + 100, [4,5,6]))
-# # print(y)
+print(y)
 
 # z = list(filter(lambda x: , [4,5,6]))
 # print(z)
