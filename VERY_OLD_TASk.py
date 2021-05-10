@@ -273,8 +273,7 @@ def Task_25(a):
 
                         # WITH WHILE
 
-def Tas_3(a):
-    while
+
 
 
 
